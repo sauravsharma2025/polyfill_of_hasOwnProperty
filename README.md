@@ -1,0 +1,1 @@
+# polyfill_of_hasOwnProperty
