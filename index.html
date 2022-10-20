@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// let arr=[1,1,2,3,4,,5,5,6,7];
+// let obj={
+//     1:0,
+//     2:0,
+//     3:0,
+//     4:0,
+//     5:0,
+//     6:0,
+//     7:0
+// };
+// for(let i=0;i<arr.length;i++){
+//     if(obj.hasOwnProperty(arr[i])){
+//         obj[arr[i]]+=1
+//     }
+// }
+// console.log('SK@',obj);
+
+// let arr=[1,1,2,3,7,5,5,6,7,'vishal','saurav'];
+// let obj={};
+// for(let i=0;i<arr.length;i++){
+//     if(typeof arr[i]=='umber'){
+//     if(obj.hasOwnProperty(arr[i])){
+//         obj[arr[i]]+=1
+//     }
+//     else{
+//         obj[arr[i]]=1;
+//     }
+// }}
+// console.log('SK@',obj);
+// Object.myfun=function abc(obj){
+//     console.log('SK@',obj);
+// }
+// let obj={saurav:3}
+// {}.myfun(obj)
+// let obj={
+//     name:'Saurav',
+//     isAvl:true,
+//     4:false
+// }
+//  Object.prototype.fun=function(callback){
+// //     for(let i=0;i<Object.keys(this).length;i++){
+// //    if(Object.keys(this)[i]==callback){
+// //     return true
+// //    }}
+// for(callback in this){
+//     return true
+// }
+// }
+// console.log(obj.fun('name'))//my function
+// console.log(obj.hasOwnProperty('name'))//This is inbuild
+
+// let obj={
+//     name:'Saurav',
+//     isAvl:true,
+//     4:false
+// }
+// let objclone={
+//     name:'Gaurav',
+//     is:true,
+//     4:false
+// }
+// let newObj={...obj};
+// // console.log('SK@',newObj);
+
+// //rest operator
+// let {isAvl,...obj3}=obj;
+// console.log('SK@',obj3);
+
+// //ALIAS AN OJECT
+// let {name:myname,is}=objclone
+// console.log('SK@',myname,is);
+
+// //geek question
+// N = 8
+// arr = [1, -1, 3, 2, -7, -5, 11, 6 ]
+// for(let i=0;i<N;i++){
+//     if(arr[i]<0)
+
+// }  
+
+let arr=[1,2,5,7];
+// let i=0;
+// while(i<arr.length){
+// for(let j=i;j<arr.length;j++){
+//     if(arr[j]+arr[i]==9){
+//          console.log('SK@true');
+//     }
+// }    
+//   i++; 
+// }
+let obj={
+    name:'saurav',
+    isAval:true,
+    address:{city:'gwalior',state:'MP'}
+}
+let obj1={
+    name:'ankit'
+}
+obj.newkey=2;
+console.log('SK@',obj);
+let newObj= {...obj,...obj1}//first Method
+console.log('SK@115',newObj);
+let newObj1=Object.assign({},obj,obj1)//second Method
+console.log('SK@',newObj1);
+
+//Shallow cpy
+let newObj2={...obj}
+console.log('i am having shallow cpy',newObj2);
+//shallow cpy 2
+let newObj3=Object.assign({},obj)
+console.log(' iam shallow through assign',newObj3);
+
+const newObj4=Object.assign({},obj,obj1,{name:'gaurav'})
+
+console.log('SK@',newObj4);
+
+const newObj5={...obj,...obj1,name:'monu'}
+console.log('SK@',newObj5);
+
+</script>
